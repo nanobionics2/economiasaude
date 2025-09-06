@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>A Nova Economia da Saúde — Precificação & Pagamento Direto</title>
+<meta name="description" content="Página de precificação e pagamento direto do curso institucional A Nova Economia da Saúde. Sem intermediários de alta taxa. Com UTM e política de afiliado físico.">
+<style>
+  :root{
+    --bg:#0b1118; --hero:#0e1f2e; --panel:#0c1520; --line:#182a3b;
+    --brand:#49e0c8; --brand2:#88ff66; --accent:#ffd166;
+    --text:#eaf2ff; --muted:#a7b4c7; --ok:#25d366; --danger:#ff4d6d;
+    --radius:18px; --shadow:0 28px 56px rgba(0,0,0,.34)
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.45}
+  a{color:var(--brand);text-decoration:none}
+  header{position:sticky;top:0;z-index:10;background:rgba(11,17,24,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .container{max-width:1180px;margin:auto;padding:0 20px}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{font-weight:800;letter-spacing:.3px}
+  .badge{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px;margin-left:10px}
+  .cta,.ghost{display:inline-flex;gap:10px;align-items:center;padding:13px 18px;border-radius:12px;font-weight:700}
+  .cta{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#09221c;box-shadow:0 8px 26px rgba(73,224,200,.24)}
+  .ghost{border:1px solid var(--line);color:var(--text)}
+  .hero{background:radial-gradient(900px 460px at 80% 10%,rgba(73,224,200,.12),transparent 60%),radial-gradient(700px 360px at 10% 0%,rgba(136,255,102,.08),transparent 60%),var(--hero);border-bottom:1px solid var(--line);padding:52px 0}
+  h1{font-size:42px;line-height:1.05;margin:8px 0 14px}
+  h1 b{color:var(--brand)}
+  .lead{font-size:18px;color:var(--muted);max-width:70ch}
+  section{padding:52px 0}
+  .panel{background:linear-gradient(180deg,#0d1723,#0a131c);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .list{margin:0;padding-left:18px} .list li{margin:8px 0}
+  .muted{color:#a4b6cb}
+  .ok{color:var(--brand2);font-weight:700}
+  .warn{color:var(--accent);font-weight:700}
+  .danger{color:var(--danger);font-weight:700}
+  label{display:block;margin:10px 0 6px}
+  input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0a131c;color:var(--text)}
+  .paybox{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+  .small{font-size:13px}
+  footer{border-top:1px solid var(--line);color:#9fb0c7}
+  .foot{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;padding:22px 0}
+  @media (max-width:980px){.grid-2,.grid-3,.grid-4,.paybox{grid-template-columns:1fr} h1{font-size:32px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div>
+      <span class="brand">NexialBusiness Health</span>
+      <span class="badge">Precificação & Pagamento Direto</span>
+    </div>
+    <div>
+      <a class="cta" href="https://wa.me/5591980144854?text=Tenho%20d%C3%BAvidas%20sobre%20o%20pagamento%20direto">💬 WhatsApp (91) 98014-4854</a>
+      <a class="ghost" href="#programa">📚 Programa do Curso</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1><b>A Nova Economia da Saúde</b> — Precificação, CTA e Pagamento Direto</h1>
+    <p class="lead">
+      Página institucional de contratação **sem Hotmart** ou plataformas com taxas altas. 
+      Rastreio automático de **UTMs** e **afiliado físico** (quando houver). 
+      Público-alvo: <b>médicos-proprietários (donos de clínica/hospital)</b>, executivos, gestores e profissionais de saúde.
+    </p>
+    <p class="muted">Curso educacional-consultivo baseado em literatura e pesquisa aplicada — <b>sem promessas de resultado</b> e respeitando normas e conselhos profissionais.</p>
+  </div>
+</section>
+
+<section id="politica">
+  <div class="container panel">
+    <h2 style="margin:0 0 10px">Política de Afiliado Físico & UTM</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Status do afiliado</h3>
+        <p id="af_status" class="muted">Verificando parâmetros da URL…</p>
+        <ul class="list small">
+          <li><span class="ok">Com UTM/afiliado</span>: registro de comissão conforme contrato.</li>
+          <li><span class="warn">Sem UTM/afiliado</span>: aquisição direta no site, <b>sem comissão</b>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Como funciona</h3>
+        <ul class="list">
+          <li>URL recebida via afiliado físico contém `?af=JOAO1` (exemplo) + UTMs.</li>
+          <li>Os dados são incluídos no pedido e exibidos na confirmação.</li>
+          <li>Compra direta (sem `af`) não gera comissão.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planos">
+  <div class="container">
+    <h2 style="margin:0 0 12px">Planos institucionais</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>🔹 Palestra Executiva</h3>
+        <p>Alinhamento institucional para direção, médicos e gestores.</p>
+        <ul class="list small">
+          <li>Visão baseada em evidências</li>
+          <li>Sem promessas — foco em linguagem comum</li>
+          <li>On-line ou presencial</li>
+        </ul>
+        <p class="muted"><b>Investimento:</b> sob consulta</p>
+        <p><a class="ghost" href="#checkout">Agendar/Reservar</a></p>
+      </div>
+
+      <div class="card">
+        <h3>🔹 Curso In-Company</h3>
+        <p>Módulos customizados à realidade da instituição.</p>
+        <ul class="list small">
+          <li>Documentação e governança</li>
+          <li>Peças psico/clínico-econômicas</li>
+          <li>Sem promessas — finalidade formativa</li>
+        </ul>
+        <p class="muted"><b>Investimento:</b> sob consulta</p>
+        <p><a class="ghost" href="#checkout">Solicitar proposta</a></p>
+      </div>
+
+      <div class="card">
+        <h3>🔹 Curso + Hospital P&D</h3>
+        <p>Curso com montagem de núcleo educacional interno.</p>
+        <ul class="list small">
+          <li>Comitê técnico e protocolos educacionais</li>
+          <li>Registro de aprendizados</li>
+          <li>Sem metas comerciais/garantias</li>
+        </ul>
+        <p class="muted"><b>Investimento:</b> sob consulta</p>
+        <p><a class="cta" href="#checkout">Avançar</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="justificativas">
+  <div class="container panel">
+    <h2 style="margin:0 0 10px">Justificativas & Motivações para Investir</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Linguagem Comum & Decisão</h3>
+        <ul class="list">
+          <li>Integra médicos, executivos e gestores</li>
+          <li>Critérios transparentes para priorização</li>
+          <li>Baseado em literatura e pesquisa aplicada</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Governança & Compliance</h3>
+        <ul class="list">
+          <li>Ritos e documentação replicáveis</li>
+          <li>Alinhado a normas e ética</li>
+          <li>Suporte a auditoria e qualidade</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Capacidades Internas</h3>
+        <ul class="list">
+          <li>Menor dependência de terceiros</li>
+          <li>Formação metodológica e ferramentas</li>
+          <li>Registro de aprendizados (Hospital P&D)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:8px">Sem promessas de resultado. Avanços dependem do contexto, recursos e execução da própria organização.</p>
+  </div>
+</section>
+
+<section id="programa">
+  <div class="container">
+    <h2 style="margin:0 0 12px">Programa do Curso (visão sumária)</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Pilares (base nos artigos)</h3>
+        <ul class="list">
+          <li>Biocapitalismo e hipermercantilização da medicina</li>
+          <li>Economia Anti-Assimétrica na prática clínica</li>
+          <li>Economia das Doenças (framework replicável)</li>
+          <li>Pobreza e vetores neuroeconômicos</li>
+          <li>Estado Social Online & governança digital</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Conteúdos integrados</h3>
+        <ul class="list">
+          <li><b>Hospital P&D</b> — Núcleo educacional interno (comitê, protocolos, registro de aprendizados)</li>
+          <li><b>Hospital & Engenharia de Tecidos Humanos</b> — visão translacional e limites éticos/regulatórios</li>
+          <li><b>Neurodireito</b> — simetria informacional, consentimento e regulação sanitária</li>
+          <li>IA & automações — visão responsável e critérios de adoção</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:8px">Objetivo: formação de decisão e documentação — não há promessas clínicas, financeiras ou operacionais.</p>
+  </div>
+</section>
+
+<section id="checkout">
+  <div class="container">
+    <h2 style="margin:0 0 12px">Contratação & Pagamento Direto</h2>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h3 style="margin-top:0">Opção A — Solicitar Proposta</h3>
+        <form id="proposalForm" class="small">
+          <label>Nome e cargo</label><input name="name" required>
+          <label>Instituição / Cidade</label><input name="org" required>
+          <label>E-mail</label><input name="email" type="email" required>
+          <label>WhatsApp</label><input name="whatsapp" placeholder="+55 (..)">
+          <label>Plano de interesse</label>
+          <select name="plan">
+            <option>Palestra Executiva</option>
+            <option>Curso In-Company</option>
+            <option>Curso + Hospital P&D</option>
+          </select>
+          <input type="hidden" name="af">
+          <input type="hidden" name="utm_source">
+          <input type="hidden" name="utm_medium">
+          <input type="hidden" name="utm_campaign">
+          <input type="hidden" name="utm_content">
+          <input type="hidden" name="utm_term">
+          <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+            <button type="submit" class="cta">📄 Enviar & Falar no WhatsApp</button>
+            <a class="ghost" href="mailto:nexialbusiness@proton.me">✉️ Enviar por e-mail</a>
+          </div>
+          <p class="muted">Responderemos com proposta formal e contrato. Sem compromisso.</p>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h3 style="margin-top:0">Opção B — Pagamento Direto</h3>
+        <p class="muted">Sem plataformas de alta taxa. Você escolhe PIX (recomendado) ou Cartão. Pode usar para <b>taxa de reserva</b> (defina `?reserva=VALOR` na URL) ou para pagamento integral.</p>
+        <form id="payForm" class="small">
+          <label>Produto</label>
+          <select name="product" required>
+            <option value="palestra">Palestra Executiva</option>
+            <option value="curso">Curso In-Company</option>
+            <option value="curso_pd">Curso + Hospital P&D</option>
+          </select>
+          <label>Modalidade</label>
+          <select name="mode">
+            <option value="online">On-line</option>
+            <option value="presencial">Presencial</option>
+          </select>
+          <label>Identificação fiscal (CPF/CNPJ)</label><input name="taxid" required>
+          <div class="paybox">
+            <div>
+              <label>Valor (R$)</label>
+              <input name="amount" id="amount" placeholder="Defina aqui ou use ?reserva=..." required inputmode="decimal">
+              <p class="small muted">Use para taxa de reserva ou valor integral (a combinar oficialmente).</p>
+            </div>
+            <div>
+              <label>Método</label>
+              <select name="method" id="method">
+                <option value="pix">PIX (recomendado)</option>
+                <option value="card">Cartão</option>
+              </select>
+            </div>
+          </div>
+          <label>Contato (nome)</label><input name="buyer_name" required>
+          <label>E-mail</label><input name="buyer_email" type="email" required>
+          <label>WhatsApp</label><input name="buyer_whatsapp" placeholder="+55 (..)">
+          <input type="hidden" name="af">
+          <input type="hidden" name="utm_source">
+          <input type="hidden" name="utm_medium">
+          <input type="hidden" name="utm_campaign">
+          <input type="hidden" name="utm_content">
+          <input type="hidden" name="utm_term">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+            <button type="submit" class="cta">💳 Pagar agora</button>
+            <a class="ghost" href="https://wa.me/5591980144854?text=D%C3%BAvidas%20sobre%20pagamento%20direto%20(Nova%20Economia%20da%20Sa%C3%BAde)">💬 Tirar dúvidas</a>
+          </div>
+          <p class="small muted">Ao prosseguir, você concorda com os termos institucionais e emissão de NF. Sem promessas de resultado.</p>
+          <div id="payMsg" class="small muted" style="margin-top:8px"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container panel">
+    <h2 style="margin:0 0 8px">Atendimento institucional</h2>
+    <p><b>WhatsApp:</b> <a href="https://wa.me/5591980144854">(91) 98014-4854</a> • <b>E-mail:</b> <a href="mailto:nexialbusiness@proton.me">nexialbusiness@proton.me</a></p>
+    <p class="muted">Curso educacional-consultivo; decisões clínicas e regulatórias seguem normas e conselhos profissionais.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <div>© NexialBusiness • Cerebral.top — Todos os direitos reservados.</div>
+    <div style="text-align:right"><a class="ghost" href="#top">↑ Topo</a></div>
+  </div>
+</footer>
+
+<script>
+  // Utilitários
+  function getQuery(){
+    const p = new URLSearchParams(location.search);
+    const o = {}; for(const [k,v] of p.entries()) o[k]=v; return o;
+  }
+  function setHidden(form, data){
+    ["af","utm_source","utm_medium","utm_campaign","utm_content","utm_term"].forEach(k=>{
+      const el=form.querySelector(`[name="${k}"]`);
+      if(el) el.value = data[k] || "";
+    });
+  }
+  function openWhatsAppWithPrefill(text){
+    const url = "https://wa.me/5591980144854?text="+encodeURIComponent(text);
+    window.open(url, "_blank");
+  }
+
+  const q = getQuery();
+  const af = q.af || q.affiliate || ""; // alias
+  const utm = {
+    utm_source: q.utm_source || "",
+    utm_medium: q.utm_medium || "",
+    utm_campaign: q.utm_campaign || "",
+    utm_content: q.utm_content || "",
+    utm_term: q.utm_term || "",
+    af
+  };
+
+  // Sinal/Reserva (opcional via query ?reserva=1000)
+  const reserva = q.reserva ? String(q.reserva).replace(",",".") : "";
+
+  // Exibir política afiliado
+  const afBox = document.getElementById("af_status");
+  if(af){
+    afBox.innerHTML = `Afiliado físico detectado: <b>${af}</b> • Comissão registrada conforme política.`;
+  }else{
+    afBox.innerHTML = `Sem parâmetro de afiliado. Compra direta no site: <b>sem comissão</b>.`;
+  }
+
+  // Formularios
+  const proposalForm = document.getElementById("proposalForm");
+  const payForm = document.getElementById("payForm");
+  if(proposalForm){ setHidden(proposalForm, utm); }
+  if(payForm){ 
+    setHidden(payForm, utm);
+    if(reserva){ payForm.amount.value = reserva; }
+  }
+
+  // Envio Proposta: abre WhatsApp com resumo + (opcional) envia para seu endpoint
+  proposalForm?.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const fd = new FormData(proposalForm);
+    const msg = `[Proposta] A Nova Economia da Saúde
+Nome: ${fd.get("name")}
+Cargo/Instituição: ${fd.get("org")}
+E-mail: ${fd.get("email")}
+WhatsApp: ${fd.get("whatsapp")||"-"}
+Plano: ${fd.get("plan")}
+Afiliado: ${fd.get("af")||"-"}
+UTMs: src=${fd.get("utm_source")||"-"} med=${fd.get("utm_medium")||"-"} camp=${fd.get("utm_campaign")||"-"}
+`;
+    openWhatsAppWithPrefill(msg);
+
+    // Se quiser, também faça um POST ao seu backend para registrar o lead:
+    // fetch("/api/proposal", { method:"POST", body: fd });
+  });
+
+  // Pagamento direto (PIX/Card)
+  payForm?.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    const fd = new FormData(payForm);
+    const method = fd.get("method");
+    const amount = fd.get("amount");
+    const product = fd.get("product");
+    const payMsg = document.getElementById("payMsg");
+
+    // Validação básica
+    if(!amount || Number(amount) <= 0){
+      payMsg.innerHTML = "<span class='danger'>Defina um valor válido para reserva ou pagamento integral.</span>";
+      return;
+    }
+
+    // Monta payload
+    const payload = {};
+    fd.forEach((v,k)=>payload[k]=v);
+    payload.amount = Number(String(payload.amount).replace(",","."));
+    payload.currency = "BRL";
+
+    try{
+      if(method === "pix"){
+        // Seu backend deve gerar BR Code / QR Pix e retornar { brcode, qr_png_base64, charge_id }
+        const res = await fetch("/api/checkout_pix", {
+          method:"POST",
+          headers:{ "Content-Type":"application/json" },
+          body: JSON.stringify(payload)
+        });
+        if(!res.ok) throw new Error("Falha ao iniciar PIX");
+        const data = await res.json();
+        payMsg.innerHTML = `
+          <div class="ok">PIX gerado com sucesso.</div>
+          <div class="small">BR Code (copia e cola):</div>
+          <textarea readonly rows="4" style="width:100%;">${data.brcode||""}</textarea>
+          ${data.qr_png_base64 ? `<img alt="QR Pix" style="margin-top:8px;max-width:220px;border-radius:8px;border:1px solid var(--line)" src="data:image/png;base64,${data.qr_png_base64}">` : ""}
+          <div class="small muted">Ao concluir o pagamento, você receberá confirmação por e-mail/WhatsApp.</div>
+        `;
+      }else{
+        // Cartão: seu backend inicia sessão no gateway e responde com URL de checkout hospedado
+        const res = await fetch("/api/checkout_card", {
+          method:"POST",
+          headers:{ "Content-Type":"application/json" },
+          body: JSON.stringify(payload)
+        });
+        if(!res.ok) throw new Error("Falha ao iniciar pagamento no cartão");
+        const data = await res.json();
+        if(data.redirect_url){
+          location.href = data.redirect_url; // ex.: página segura do gateway
+        }else{
+          payMsg.innerHTML = "<span class='danger'>Gateway não retornou URL de checkout.</span>";
+        }
+      }
+    }catch(err){
+      console.error(err);
+      payMsg.innerHTML = "<span class='danger'>Não foi possível iniciar o pagamento. Tente novamente ou fale no WhatsApp.</span>";
+    }
+  });
+</script>
+</body>
+</html>
